@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes slideout{
+            0%{
+                transform: translate(10px,0);
+                
+            }
+            44%{
+                transform: translate(250px,0px);
+            }
+            70%{
+                transform: translate(450px,0px);
+            }
+            100%{
+                transform:translate(850px,0);
+            }
+        }
+         .fadein{
+            animation: slideout 2s ease-in 1s;
+         }
+         @keyframes round{
+            2%{
+                transform: translate(30px,0);
+                
+            }
+            56%{
+                transform: translate(320px,0px);
+            }
+            80%{
+                transform: translate(690px,0px);
+            }
+            99%{
+                transform:translate(970px,0);
+            }
+        }
+        .D1{
+            animation:round 1s ease-out 1s;
+        }
+        @keyframes race{
+            4%{
+                transform: translate(20px,0);
+                
+            }
+            53%{
+                transform: translate(329px,0px);
+            }
+            79%{
+                transform: translate(670px,0px);
+            }
+            90%{
+                transform:translate(989px,0);
+            }
+        }
+         .D2{
+            animation: race 2s ease-in-out 1s ;
+         }
+         @keyframes car{
+            3%{
+                transform: translate(43px,0);   
+            }
+            66%{
+                transform: translate(201px,0px);
+            }
+            84%{
+                transform: translate(569px,0px);
+            }
+            97%{
+                transform:translate(831px,0);
+            }
+        }
+         .D3{
+            animation: car 2s linear 1s ;
+         }
+         
+    </style>
+</head>
+<body>
+    <div class="fadein">
+        <img src="./car1.jpeg" height="150px" width="250px"></div>
+    <div class="D1"><img src="./car2.jpeg" height="150px" width="250px">
+    </div>
+    <div class="D2">
+        <img src="./car4.jpeg" width="250px" height="200px">
+    </div>
+    <div class="D3">
+        <img src="./car3.jpeg" width="250px" height="150px">
+    </div>
+</body>
+</html>
